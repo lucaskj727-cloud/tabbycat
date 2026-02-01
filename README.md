@@ -9,7 +9,17 @@
 [![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE.md)
 [![Repository](https://img.shields.io/badge/repo-lucaskj727--cloud%2Ftabbycat-blue)](https://github.com/lucaskj727-cloud/tabbycat)
 
-### 🚀 [**Deploy Now & Use Immediately**](DEPLOY_NOW.md) 🚀
+---
+
+### ⚠️ **IMPORTANT: You're viewing the `copilot/create-tabbycat-replica` branch**
+
+**Can't find documentation?** See [HOW_TO_ACCESS_DOCS.md](HOW_TO_ACCESS_DOCS.md) for direct links!
+
+---
+
+### 🚀 [**Deploy Now & Use Immediately**](https://github.com/lucaskj727-cloud/tabbycat/blob/copilot/create-tabbycat-replica/DEPLOY_NOW.md) 🚀
+
+**Or deploy directly:** Go to [render.com](https://render.com) → New Web Service → Connect this repo → Deploy!
 
 </div>
 
@@ -37,7 +47,9 @@ DebateFlow is a comprehensive debate tournament management system that handles e
 
 ### ⚡ Want to Use It Right Now?
 
-**See [DEPLOY_NOW.md](DEPLOY_NOW.md) for instant cloud deployment** (Free, 10 minutes)
+**See [DEPLOY_NOW.md](https://github.com/lucaskj727-cloud/tabbycat/blob/copilot/create-tabbycat-replica/DEPLOY_NOW.md) for instant cloud deployment** (Free, 10 minutes)
+
+Or view [HOW_TO_ACCESS_DOCS.md](HOW_TO_ACCESS_DOCS.md) if links aren't working.
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
@@ -194,7 +206,7 @@ For detailed guides, visit the comprehensive documentation:
 - 📙 **[Features](docs/features/)** - In-depth feature documentation
 - 📕 **[Tournament Guide](docs/guide/)** - Best practices and logistics
 
-Or see the [GETTING_STARTED.md](GETTING_STARTED.md) guide for a detailed walkthrough.
+Or see the [GETTING_STARTED.md](https://github.com/lucaskj727-cloud/tabbycat/blob/copilot/create-tabbycat-replica/GETTING_STARTED.md) guide for a detailed walkthrough.
 
 ## 🎓 Video Tutorials
 
