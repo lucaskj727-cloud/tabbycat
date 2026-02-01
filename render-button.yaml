@@ -1,0 +1,43 @@
+# DebateFlow - One-Click Deploy to Render
+# Visit: https://render.com/deploy
+
+services:
+  # Web Service
+  - type: web
+    name: debateflow
+    env: python
+    plan: free
+    buildCommand: "npm install && npm run build && python manage.py collectstatic --noinput && python manage.py migrate"
+    startCommand: "daphne tabbycat.asgi:application --port $PORT --bind 0.0.0.0 -v 2"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: debateflow-db
+          property: connectionString
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: ON_RENDER
+        value: "1"
+      - key: DEBUG
+        value: "False"
+      - key: DISABLE_SENTRY
+        value: "True"
+      - key: PYTHON_VERSION
+        value: "3.12"
+    healthCheckPath: /
+    
+  # Redis Cache
+  - type: redis
+    name: debateflow-redis
+    plan: free
+    ipAllowList:
+      - source: 0.0.0.0/0
+        description: Everywhere
+    maxmemoryPolicy: allkeys-lru
+
+# Database
+databases:
+  - name: debateflow-db
+    databaseName: debateflow
+    user: debateflow
+    plan: free

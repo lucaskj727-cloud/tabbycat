@@ -163,7 +163,7 @@ export default {
           if (result.box) {
             Quagga.ImageDebug.drawPath(
               result.box, { x: 0, y: 1 }, drawingCtx,
-              { color: '#663da0', lineWidth: 4 },
+              { color: '#1976d2', lineWidth: 4 },
             )
           }
           if (result.codeResult && result.codeResult.code) {

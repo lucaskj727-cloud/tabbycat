@@ -1,21 +1,19 @@
 <div align="center">
 
-<img width=200 src="https://raw.githubusercontent.com/TabbycatDebate/tabbycat/develop/tabbycat/static/logo.svg?sanitize=true">
+![DebateFlow Logo](../tabbycat/static/logo.svg)
 
-# Tabbycat
+# DebateFlow
 
-[![Release](https://img.shields.io/github/release/tabbycatdebate/tabbycat.svg)](https://github.com/tabbycatdebate/tabbycat/releases)
-[![Crowdin](https://badges.crowdin.net/tabbycat/localized.svg)](https://crowdin.com/project/tabbycat)
-[![Docs](https://readthedocs.org/projects/tabbycat/badge/)](http://tabbycat.readthedocs.io/en/stable/)
-![Build Status](https://github.com/TabbycatDebate/tabbycat/workflows/Django%20CI/badge.svg)
-[![Maintainability](https://api.codeclimate.com/v1/badges/33dc219dfb957ad658c2/maintainability)](https://codeclimate.com/github/TabbycatDebate/tabbycat/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/33dc219dfb957ad658c2/test_coverage)](https://codeclimate.com/github/TabbycatDebate/tabbycat/test_coverage)
+[![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](../LICENSE.md)
+[![Repository](https://img.shields.io/badge/repo-lucaskj727--cloud%2Ftabbycat-blue)](https://github.com/lucaskj727-cloud/tabbycat)
+
+**Advanced tournament tabulation system for parliamentary debate**
 
 </div>
 
-Tabbycat is a draw tabulation system for British Parliamentary and a variety of two-team formats. It was used at Australs 2010 and 2012–2019, EUDC 2018, WUDC 2019–2022 and many other tournaments of all sizes and formats. To see an example of a post-tournament website, have a look at the [WUDC 2022 tab website](https://wudc2022.calicotab.com/wudc/).
+DebateFlow is a comprehensive debate tournament management system for British Parliamentary and two-team parliamentary formats. Used by tournaments worldwide including Australs, EUDC, WUDC, and hundreds of local competitions.
 
-**Want to try it out?** The best way to trial Tabbycat is just to launch a new site, as described [below](#%EF%B8%8F-installation)). It takes just a few clicks, requires no technical background, and you can always deploy a fresh copy when you're ready to run your tournament.
+**Want to try it out?** The best way to trial DebateFlow is to install it locally or deploy to a cloud platform as described [below](#-installation). See the [Getting Started Guide](../GETTING_STARTED.md) for a complete walkthrough.
 
 ## 🔍 Features
 
@@ -29,41 +27,64 @@ Tabbycat is a draw tabulation system for British Parliamentary and a variety of 
 
 ## 📖 Documentation
 
-Our user guide is at [tabbycat.readthedocs.io](http://tabbycat.readthedocs.io/).
+- **[README](../README.md)** - Overview and quick start
+- **[Getting Started Guide](../GETTING_STARTED.md)** - Step-by-step tutorial
+- **[Quick Reference](../USAGE.md)** - Common commands and workflows
+- **[Full Documentation](../docs/)** - Comprehensive guides
+- **[Original Tabbycat Docs](http://tabbycat.readthedocs.io/)** - Most guides still apply
 
 ## ⬆️ Installation
 
-Tabbycat can be used in a number of ways.
+### Quick Install (Local)
 
-[Calico](https://calicotab.com/) is a managed hosting service run by one of Tabbycat's developers. For a flat fee, it will host tab websites, automatically manage their setup and performance, and provide ongoing access to the released tab. Click this button to deploy to Calico:
+```bash
+git clone https://github.com/lucaskj727-cloud/tabbycat
+cd tabbycat
+pip install pipenv && pipenv install && pipenv shell
+npm install && npm run build
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
 
-[![Deploy](https://raw.githubusercontent.com/gist/tienne-B/fc04ecd3c11a38424b642b4bba60e8d9/raw/b2c71d7d6a0d368d3e9dfd8002af729d155ad09b/calicodeploy.svg)](https://calicotab.com/tournaments/new/)
+Visit `http://localhost:8000` to get started!
 
-If you do not want to use Calico, you will need to setup and manage your own copy of Tabbycat:
+### Cloud Deployment
 
-1. For tournaments that require online access, you can [install and run Tabbycat from Heroku](https://tabbycat.readthedocs.io/en/stable/install/heroku.html). However, this will cost a small amount of money _unless_ you are a student and have registered for free Heroku hosting credits
-2. For tournaments where online access is unnecessary, you can [install and run Tabbycat from your own computer](https://tabbycat.readthedocs.io/en/stable/install/local.html)
+- **Heroku**: Follow [Heroku installation guide](docs/install/heroku.html)
+- **Render**: Use the included `render.yaml` configuration
+- **Docker**: Use the provided `Dockerfile` and `docker-compose.yml`
+
+See the [Getting Started Guide](../GETTING_STARTED.md) for detailed instructions.
 
 ## 💪 Support and Contributing
 
-If you have any feedback or would like to request support, we'd love to hear from you! There are a number of ways to get in touch, all [outlined in our documentation](http://tabbycat.readthedocs.io/en/latest/about/support.html).
+**Need Help?**
+- Check the [Documentation](../README.md)
+- Review the [Getting Started Guide](../GETTING_STARTED.md)
+- Search [GitHub Issues](https://github.com/lucaskj727-cloud/tabbycat/issues)
+- Consult [original Tabbycat documentation](http://tabbycat.readthedocs.io/)
 
-Contributions are welcome, and are greatly appreciated! Details about how to contribute [are also outlined in our documentation](http://tabbycat.readthedocs.io/en/latest/about/contributing.html).
+**Contributing**
 
-Monetary donations are much appreciated and help us to continue the development and maintenance of Tabbycat. We suggest that tournaments donate at the level of C$1 (1 Canadian dollar) per team; especially if your tournament is run for profit or fundraising purposes. More details [are available in our documentation](http://tabbycat.readthedocs.io/en/latest/about/licence.html).
+Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
 
-## ©️ Licence
+## 📄 License
 
-Tabbycat is licensed under the terms of the [GNU Affero General Public License v3.0](https://choosealicense.com/licenses/agpl-3.0/). You may copy, distribute, and modify this software; however note that this licence requires (amongst other provisions) that any modifications you make to Tabbycat be made public.
+DebateFlow is licensed under the [GNU Affero General Public License v3.0](../LICENSE.md). You may copy, distribute, and modify this software, but all modifications must be made public and remain under the same license.
 
-If you wish to modify Tabbycat in a proprietary fashion we (the developers) are open to negotiating a dual licence for this purpose. Please [contact us](http://tabbycat.readthedocs.io/en/latest/authors.html#authors) if this is the case for you.
+## 🙏 Credits
 
-## ✏️ Authors
-
-Tabbycat was authored by Qi-Shan Lim for Auckland Australs in 2010. The current active developers are:
-
+DebateFlow is based on [Tabbycat](https://github.com/TabbycatDebate/tabbycat), created by:
+- Qi-Shan Lim (original author, Auckland Australs 2010)
 - Philip Belesky
 - Chuan-Zheng Lee
 - Étienne Beaulé
 
-Please don't hesitate to contact us ([e-mail](mailto:contact@tabbycat-debate.org)) with any questions, suggestions, or generally anything relating to Tabbycat.
+Rebranded as DebateFlow with custom visual identity while preserving the excellent core functionality.
+
+## 🔗 Links
+
+- **This Repository**: https://github.com/lucaskj727-cloud/tabbycat
+- **Original Tabbycat**: https://github.com/TabbycatDebate/tabbycat
+- **Documentation**: [README](../README.md) | [Getting Started](../GETTING_STARTED.md) | [Quick Reference](../USAGE.md)

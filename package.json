@@ -1,6 +1,6 @@
 {
-  "name": "tabbycat",
-  "description": "Debating tabulation software for two-team parliamentary formats",
+  "name": "debateflow",
+  "description": "Advanced tournament tabulation system for parliamentary debate formats",
   "scripts": {
     "serve": "npm-run-all -p serve-*",
     "serve-django": "dj r 0.0.0.0:8000",
@@ -65,7 +65,7 @@
     "not dead"
   ],
   "license": "AGPL-3.0-only",
-  "repository": "https://github.com/TabbycatDebate/tabbycat",
+  "repository": "https://github.com/lucaskj727-cloud/tabbycat",
   "version": "3.18.1",
   "devDependencies": {
     "eslint-plugin-html": "^6.2.0"
