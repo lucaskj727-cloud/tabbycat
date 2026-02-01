@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .a{fill:none;}
+      .b{opacity:0.5;}
+      .c{fill:#fff;}
+      .d{clip-path:url(#a);}
+      .e{fill:url(#b);}
+      .f{fill:#e8f5e9;}
+      .g{opacity:0.33;}
+      .h{fill:#1565c0;}
+    </style>
+    <clipPath id="a">
+      <circle class="a" cx="128" cy="128" r="123"/>
+    </clipPath>
+    <linearGradient id="b" x1="128" y1="264.14" x2="128" y2="-8.14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d47a1"/>
+      <stop offset="0.51" stop-color="#1976d2"/>
+      <stop offset="0.8" stop-color="#42a5f5"/>
+      <stop offset="1" stop-color="#64b5f6"/>
+    </linearGradient>
+  </defs>
+  <title>DebateFlow Logo</title>
+  <g class="b">
+    <path class="c" d="M128,7.5a120.5,120.5,0,0,1,85.21,205.71A120.5,120.5,0,1,1,42.79,42.79,119.71,119.71,0,0,1,128,7.5m0-2A122.5,122.5,0,1,0,250.5,128,122.5,122.5,0,0,0,128,5.5Z"/>
+  </g>
+  <g class="d">
+    <rect class="e" x="-7.13" y="-8.14" width="270.25" height="272.28"/>
+    <!-- Flow icon - abstract waves representing debate flow -->
+    <path class="c" d="M60,80 Q80,60 100,80 T140,80 T180,80 T220,80" stroke="#fff" stroke-width="12" fill="none"/>
+    <path class="c" d="M60,120 Q80,100 100,120 T140,120 T180,120 T220,120" stroke="#fff" stroke-width="12" fill="none" opacity="0.8"/>
+    <path class="c" d="M60,160 Q80,140 100,160 T140,160 T180,160 T220,160" stroke="#fff" stroke-width="12" fill="none" opacity="0.6"/>
+    <!-- Microphone icon -->
+    <ellipse class="c" cx="128" cy="180" rx="20" ry="30"/>
+    <rect class="c" x="118" y="210" width="20" height="20" rx="2"/>
+    <rect class="c" x="108" y="230" width="40" height="8" rx="2"/>
+  </g>
+  <g class="g">
+    <path class="h" d="M128,7a121,121,0,0,1,85.56,206.56A121,121,0,0,1,42.44,42.44,120.21,120.21,0,0,1,128,7m0-2A123,123,0,1,0,251,128,123,123,0,0,0,128,5Z"/>
+  </g>
+</svg>
