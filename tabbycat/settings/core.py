@@ -148,6 +148,7 @@ INSTALLED_APPS = (
     'channels', # For Websockets / real-time connections (above whitenoise)
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'django.contrib.postgres',  # Required for ArrayField and ChoiceArrayField
     'django_summernote',  # Keep above our apps; as we unregister an admin model
     'django.contrib.messages') \
     + TABBYCAT_APPS + (
