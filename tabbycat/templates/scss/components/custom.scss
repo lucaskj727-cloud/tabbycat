@@ -27,9 +27,12 @@ $h3-font-size: $font-size-base * 1.7; // Tweak for better mobile spacing
 //------------------------------------------------------------------------------
 
 // Theme colors
-$purple:                  #1976d2; // Primary - Changed to blue
+// Note: Variable names ($purple, $blue, etc.) follow Bootstrap conventions
+// and are used throughout the codebase. The actual colors have been changed
+// for rebranding while keeping variable names for compatibility.
+$purple:                  #1976d2; // Primary (Bootstrap's primary theme color)
 $green:                   #00bf8a; // Success
-$blue:                    #0288d1; // Info - Teal blue
+$blue:                    #0288d1; // Info (teal-blue for secondary accents)
 $orange:                  #fd681d; // Warning
 $red:                     #d1185e; // Danger
 
