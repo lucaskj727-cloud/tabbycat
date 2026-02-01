@@ -9,6 +9,8 @@
 [![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE.md)
 [![Repository](https://img.shields.io/badge/repo-lucaskj727--cloud%2Ftabbycat-blue)](https://github.com/lucaskj727-cloud/tabbycat)
 
+### 🚀 [**Deploy Now & Use Immediately**](DEPLOY_NOW.md) 🚀
+
 </div>
 
 ---
@@ -32,6 +34,12 @@ DebateFlow is a comprehensive debate tournament management system that handles e
 - 🎨 **Customizable** - Configure rules, formats, and display options
 
 ## 🚀 Quick Start
+
+### ⚡ Want to Use It Right Now?
+
+**See [DEPLOY_NOW.md](DEPLOY_NOW.md) for instant cloud deployment** (Free, 10 minutes)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
 ### Option 1: Cloud Deployment (Recommended for Online Tournaments)
 
